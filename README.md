@@ -113,3 +113,29 @@ This application is designed to demonstrate a specific workflow:
 ## License
 
 MIT 
+
+## Troubleshooting Common Issues
+
+### Network Connection Issues
+
+If you encounter problems connecting to the blockchain:
+
+1. **Check MetaMask Network**: Ensure you're connected to the correct network (Hardhat local network with Chain ID 31337)
+2. **Contract Address**: Verify that the contract address in `frontend/src/App.js` matches your deployed contract
+3. **Restart Hardhat Node**: If you've restarted your Hardhat node, you may need to reset your MetaMask account:
+   - Go to Settings > Advanced > Reset Account in MetaMask
+   - This clears transaction history without affecting your account
+
+### User Role Access Issues
+
+The application has role-based access control:
+
+1. **Patient-Only Functions**: Some functions like `getAuthorizedViewers()` are restricted to patients only
+2. **Access Denied Messages**: If you see "Access Denied" when viewing records, it means your account doesn't have permission
+3. **Verification Errors**: Doctors can only verify records for patients who have explicitly granted them access
+
+### Local Development Tips
+
+1. **Hot Reloading**: Changes to the frontend code will automatically reload the application
+2. **Contract Changes**: If you modify and redeploy the smart contract, you must update the contract address in the frontend
+3. **MetaMask Account Switching**: The application can detect account changes in MetaMask and will update accordingly 
