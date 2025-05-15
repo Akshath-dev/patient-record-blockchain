@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\External Projects\\patient-record-blockchain\\contracts\\PatientRecordVerification.sol": {
+      "lastModificationDate": 1747310579709,
+      "contentHash": "ab8a69d42ad3bb886455cf6985c6db00",
+      "sourceName": "contracts/PatientRecordVerification.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PatientRecordVerification"
+      ]
+    }
+  }
+}
